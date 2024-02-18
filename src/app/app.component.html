@@ -5,12 +5,16 @@
     <div class="left-side">
   
       <h1>{{ title }}</h1>
-      <app-heroes></app-heroes>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <nav>
+        <a routerLink="/">Home 🧭</a>
+        <a routerLink="/heroes">Heroes</a>
+        <a routerLink="/dashboard">Dashboard</a>
+      </nav>
 
+      <router-outlet></router-outlet>
+      <app-logo></app-logo>
       <app-messages></app-messages>
 
-      <app-logo></app-logo>
       </div>
   </div>
 </main>
