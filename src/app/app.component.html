@@ -1,21 +1,17 @@
-
-
+<div class="conbody">
+<header><h1>{{ title }}</h1>
+  <nav>
+    <a routerLink="/">Home 🧭</a>
+    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+</header>
 <main class="main">
-  <div class="content">
-    <div class="left-side">
-  
-      <h1>{{ title }}</h1>
-      <nav>
-        <a routerLink="/">Home 🧭</a>
-        <a routerLink="/heroes">Heroes</a>
-        <a routerLink="/dashboard">Dashboard</a>
-      </nav>
-
       <router-outlet></router-outlet>
-      <app-logo></app-logo>
-      <app-messages></app-messages>
-
-      </div>
-  </div>
 </main>
+<footer>
+  <app-logo></app-logo>
+  <app-messages></app-messages>
 
+</footer>
+</div>
