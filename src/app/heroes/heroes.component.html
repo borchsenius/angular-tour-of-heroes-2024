@@ -1,7 +1,7 @@
 <h2>My Heroes 🦸 🦸🏿‍♂️ 🦸‍♀️</h2>
 
 <ul class="heroes">
-    <li *ngFor="let hero of heroes">
+    <li *ngFor="let hero of heroes"  [@fadeIn]>
         <a routerLink="/detail/{{hero.id}}">
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </a>

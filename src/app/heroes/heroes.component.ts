@@ -7,13 +7,17 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import { RouterLink } from '@angular/router';
+import { FadeIn } from '../animation';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
   imports: [HeroDetailComponent, FormsModule, NgFor, RouterLink],
   templateUrl: './heroes.component.html',
-  styleUrl: './heroes.component.css'
+  styleUrl: './heroes.component.css',
+  animations: [
+    FadeIn(800, false),
+  ]
 })
 export class HeroesComponent {
   heroes: Hero[] = [];

@@ -1,17 +1,20 @@
-<div class="conbody">
-<header><h1>{{ title }}</h1>
-  <nav>
+<div class="conbody" >
+<header ><h1>{{ title }}</h1>
+  <nav [@fadeIn]>
     <a routerLink="/">Home 🧭</a>
     <a routerLink="/heroes">Heroes</a>
     <a routerLink="/dashboard">Dashboard</a>
   </nav>
 </header>
+
 <main class="main">
       <router-outlet></router-outlet>
 </main>
 <footer>
-  <app-logo></app-logo>
+  <app-logo [@fadeIn]></app-logo>
   <app-messages></app-messages>
 
 </footer>
 </div>
+
+
