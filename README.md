@@ -1,11 +1,12 @@
 # AngularTourOfHeroes2024
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0. It is a standalone component project as opposed to module based.
 
 ## deploy to github- pages
 ```
 $ ng deploy --base-href=/angular-tour-of-heroes-2024/´´
 ```
+Then go to https://borchsenius.github.io/angular-tour-of-heroes-2024/
 
 ## Development server
 
