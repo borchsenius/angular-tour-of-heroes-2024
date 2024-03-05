@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeroesComponent } from './heroes.component';
+import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+import { HeroService } from '../hero.service';
 
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
@@ -8,7 +11,12 @@ describe('HeroesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeroesComponent]
+      imports: [HeroesComponent],
+      providers: [
+        provideRouter([{ path: '**', component: HeroesComponent }]),
+        provideHttpClient(),
+        HeroService,
+      ]
     })
     .compileComponents();
     
